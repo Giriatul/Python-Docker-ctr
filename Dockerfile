@@ -16,18 +16,33 @@
 
 
 # Base image
-FROM python:alpine
+#FROM python:alpine
 
 # Add app code to /code inside container image
-ADD . /code
+#ADD . /code
 
 # Set working directory for subsequent commands
-WORKDIR /code
+#WORKDIR /code
 
 # Install dependencies
 # RUN pip install -r requirements.txt
 
 # Command to run when container starts
-ENTRYPOINT ["python", "good_string.py"]
+#ENTRYPOINT ["python", "good_string.py"]
+
+
+
+
+FROM python:latest
+
+WORKDIR /usr/app/src
+
+COPY good_string.py ./
+
+CMD [ "python", "./good_string.py"]
+
+
+
+
 
 
