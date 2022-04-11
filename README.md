@@ -1,2 +1,2 @@
-# Python-Docker-ctr
+# python-docker
 First python script run on container
