@@ -6,8 +6,6 @@ ADD good_string.py /
 
 WORKDIR /code
 
-COPY requirements.txt requirements.txt
-
 # RUN tells Docker which additional commands to execute.
 RUN pip3 install -r requirement.txt
 
