@@ -25,7 +25,7 @@ ADD . /code
 WORKDIR /code
 
 # Install dependencies
-RUN pip install -r requirements.txt
+# RUN pip install -r requirements.txt
 
 # Command to run when container starts
 ENTRYPOINT ["python", "good_string.py"]
